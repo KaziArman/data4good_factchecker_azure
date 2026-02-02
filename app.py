@@ -202,7 +202,7 @@ for msg in st.session_state.chat:
     if msg["role"] == "assistant":
         with st.chat_message(
             "assistant",
-            avatar="assets/chatgpt.jpg",  # temporary fallback emoji
+            avatar="chatgpt.jpg",  # temporary fallback emoji
         ):
             #st.markdown("**GPT-5 Mini**")
             #st.write(msg["text"])
@@ -275,5 +275,6 @@ if user_input:
                 "label": None,
                 "is_question": False,
             })
+
 
     st.rerun()
